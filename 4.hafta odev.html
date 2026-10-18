@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tasarımı - CSS Uygulamaları</title>
+    
+    <style>
+        /* sabloncss.css içindeki genel sayfa stilleri */
+        body {
+            background-color: darkseagreen;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Başlık ve Paragraf Genel Stilleri */
+        h1 {
+            color: red;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: red;
+            font-size: 30px;
+            text-decoration: line-through;
+        }
+
+        h3 {
+            color: red;
+            font-size: 30px;
+            text-decoration: overline;
+        }
+
+        p {
+            color: blue;
+            font-size: 30px;
+        }
+
+        /* ID Seçicileri */
+        #deneme {
+            color: yellow;
+            font-size: 25px;
+        }
+
+        #deneme2 {
+            color: magenta;
+            font-size: 25px;
+        }
+
+        /* Class Seçicisi */
+        .sabloncss {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Harici / Genel CSS Stillerini Alan Elemanlar -->
+    <h1>Genel CSS Alan Başlık 1 (Altı Çizili)</h1>
+    <h2>Genel CSS Alan Başlık 2 (Üstü Çizili)</h2>
+    <h3>Genel CSS Alan Başlık 3 (Tepeden Çizili)</h3>
+    <p>Genel CSS Alan Paragraf (Mavi, 30px)</p>
+
+    <hr>
+
+    <!-- Inline (Satır İçi) CSS ile Ezilen Stiller -->
+    <h1 style="font-size: 20px; color: red;">Inline Stilli BAŞLIK</h1>
+    <h2 style="color: red; font-size: 15px;">Inline Stilli DENEME (Kırmızı, 15px)</h2>
+    <h2 style="font-size: 20px;">Inline Stilli DENEME (Sadece Boyut 20px)</h2>
+    <h3 style="font-size: 20px;">Inline Stilli DENEME 3</h3>
+    <p style="font-size: 15px; color: blue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+    <div>üst başlık</div>
+
+    <hr>
+
+    <!-- ID ve Class Kullanımı -->
+    <div id="deneme" class="sabloncss">Deneme (Sarı, 25px, ID Seçici)</div>
+    <div id="deneme2" class="sabloncss">Deneme1 (Magenta/Pembe, 25px, ID Seçici)</div>
+
+</body>
+</html>
